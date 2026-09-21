@@ -1,0 +1,13 @@
+Mocking API
+--------------------
+When creating a mock and want to intecept a certain API call, you can use 
+    method "page.route" and 
+    provide the API URL thats's responsible for the call that you want to intercept.
+
+Make sure that you declare the "page.route" before the step in your application when application makes the call to this API.Otherwise, it will not work
+
+Also make sure that you add an assertion of your result that you are mocking, because sometimes if the application runs faster and the delay of the network may result in the flaky test and your mocks wil not be displayed or reflected on the page.
+
+To fulfill the mock response, you need to use method "route.fulfill", then JSON property and provide the JSON file where your mock object is. 
+
+It is convenient and a kind of good practice to keep test data separately from the test to make sure that the test is nicely organized and the data is kept separately.

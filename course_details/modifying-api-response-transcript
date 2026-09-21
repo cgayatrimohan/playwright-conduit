@@ -1,0 +1,13 @@
+Modifying API Response
+------------------------
+When you want to modify the existing API response before fulfilling it to your
+application, you can intercept the API URL that you want to modify.
+
+Then use method route fetch to fetch actual details from the server.
+
+And then using method JSON, get the JSON response that you can modify whatever properties using regular JavaScript syntax.
+
+And then by updating the property, then you just fulfill this object back and
+this object is displayed in the application.
+
+Also make sure that your application is in the right state, so you add the assertions, preferably locator assertions to validate that modifications that you did with the interception correctly reflected in the application.

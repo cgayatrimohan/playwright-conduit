@@ -1,0 +1,6 @@
+Sharing Authentication
+-------------------------
+https://playwright.dev/docs/auth
+
+Very cool feature built in, easy to configure, and saves a lot of time.
+Authenticate just once, and then the rest of the test, automatically authenticated state.
